@@ -41,16 +41,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 @media screen and (min-width: 600px) {
   #content {
     display: flex;
-    flex-flow: row-reverse wrap;
-    justify-content: center;
+    flex-flow: row-reverse wrap-reverse;
   }
-  #three,
   #two,
   #one {
-    width: 50vw;
+    flex: 1 0 50%;
+    height: 50vw;
   }
-  #three{
-    order: 1;
+  #three {
+    flex: 1 0 100%;
   }
 }
 
